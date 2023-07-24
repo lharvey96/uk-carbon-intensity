@@ -11,8 +11,8 @@ streamlit = "^1.25.0"
 plotly = "^5.15.0"
 pydantic = "^2.0.3"
 
-[tool.poe.tasks]
-run = "poetry run python -m streamlit run main.py"
+#[tool.poe.tasks]
+#run = "poetry run python -m streamlit run main.py"
 
 [build-system]
 requires = ["poetry-core"]
