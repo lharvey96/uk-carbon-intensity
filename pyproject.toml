@@ -1,0 +1,20 @@
+[tool.poetry]
+name = "uk-carbon-intensity"
+version = "0.1.0"
+description = ""
+authors = ["Lewis Harvey <94367899+lharvey96@users.noreply.github.com>"]
+readme = "README.md"
+packages = [{include = "uk_carbon_intensity"}]
+
+[tool.poetry.dependencies]
+python = "^3.11"
+streamlit = "^1.25.0"
+plotly = "^5.15.0"
+pydantic = "^2.0.3"
+
+[tool.poe.tasks]
+run      = "poetry run python -m streamlit run main.py"                         # a simple command task
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
